@@ -13,7 +13,7 @@ public class CConverter {
 	}
 
 	// 메소드 일반
-	public static double toDoller(double won) {
+	public static double toDollar(double won) {
 		return won / rate;
 	}
 

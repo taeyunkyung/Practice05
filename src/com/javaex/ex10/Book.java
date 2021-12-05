@@ -52,11 +52,15 @@ public class Book {
 	}
 
 	public void print() {
+		String rentState;
+		
 		if (stateCode == 1) {
-			System.out.println("재고있음");
-		} else if (stateCode == 0) {
-			System.out.println("대여중");
-		} 
+			rentState = "재고있음";
+		} else {
+			rentState = "대여중";
+		}
+		
+		System.out.println(bookNo + " 책 제목:" + title + ", 작가:" + author + ", 대여유무:" + rentState);
 	}
 
 }

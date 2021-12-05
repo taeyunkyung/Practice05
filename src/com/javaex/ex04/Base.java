@@ -17,7 +17,7 @@ public class Base {
 		} else if (state.equals("오후")) {
 			afternoon();
 		}
-	}
+	} // switch-case
 
 	public void day() {
 		System.out.println("낮에는 열심히 수업듣자");

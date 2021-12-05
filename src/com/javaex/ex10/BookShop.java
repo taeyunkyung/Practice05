@@ -30,6 +30,7 @@ public class BookShop {
 		for (int i = 0; i < books.length; i++) {
 			if (books[i].getBookNo() == num) {
 				books[i].rent();
+				break;
 			}
 		}
 
@@ -42,8 +43,8 @@ public class BookShop {
 	// (2)전달받은 배열을 모두 출력하는 메소드
 	private static void displayBookInfo(Book[] books) {
 		for (int i = 0; i < books.length; i++) {
-			System.out.print((i + 1) + " 책 제목:" + books[i].getTitle() + ", 작가:" + books[i].getAuthor() + ", 대여유무:"
-				);
+			// System.out.print((i + 1) + " 책 제목:" + books[i].getTitle() + ", 작가:" + books[i].getAuthor() + ", 대여유무:");
+			// print() 메소드로
 			books[i].print();
 			
 		}
